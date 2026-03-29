@@ -163,12 +163,22 @@
                 text-decoration: none;
             }
         }
+
+        .hidden-menu-top {
+            display: none
+        }
+        .show-menu-top {
+            display: block
+        }
+        .margion-section-top {
+            margin-top: 36px;
+        }
     </style>
 </head>
 
 <body>
 
-    <section>
+     <section class="section-top" id="menuTop">
         <div class="offer-container">
             <div class="description">
                 🎁 <strong>COMBO</strong>:<strong> (MENTORIA AO VIVO +</strong> <strong>IMERSAO) </strong>
@@ -176,7 +186,7 @@
             </div>
         </div>
     </section>
-    <section class="section1">
+    <section class="section1" id="sectionTop">
         <div class="title">
             🚀 Aprenda programação do zero e construa seus primeiros sites
             ainda essa semana (mesmo começando do
@@ -190,6 +200,19 @@
             com programação
         </div>
     </section>
+
+    <script>
+        let menuTop = true;
+        let menu = document.getElementById("menuTop");
+        let sectionTop = document.getElementById("sectionTop");
+        if (menuTop) {
+            menu.classList.add('show-menu-top');
+            sectionTop.classList.toggle('margion-section-top')
+
+        } else {
+            menu.classList.add('hidden-menu-top')
+        }
+    </script>
 
     <section class="section2">
         <div class="title">
