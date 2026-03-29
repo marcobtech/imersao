@@ -167,20 +167,51 @@
                 text-decoration: none;
             }
         }
+
         .hidden-menu-top {
             display: none
         }
+
         .show-menu-top {
             display: block
         }
+
         .margion-section-top {
             margin-top: 36px;
         }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            font-size: 28px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
     </style>
-    
+
 </head>
 
 <body>
+
+    <a href="https://wa.me/5591985301811?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20mentoria" class="whatsapp-float"
+        target="_blank">
+        💬
+    </a>
 
     <section class="section-top" id="menuTop">
         <div class="offer-container">
@@ -219,7 +250,6 @@
             menu.classList.add('hidden-menu-top')
         }
     </script>
-    
 
     <section class="section2">
         <div class="title">
