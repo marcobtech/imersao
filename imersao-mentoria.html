@@ -19,15 +19,17 @@
             display: flex;
             flex-direction: column;
             padding: 32px 0px 16px;
-            background: url(bg3.png) center / cover;
+            background: url(./img/bg3.png) center / cover;
             display: flex;
             justify-content: center;
             align-items: center;
+
             .title {
                 color: white;
             }
+
             .description {
-               color: white;
+                color: white;
             }
         }
 
@@ -35,7 +37,7 @@
             display: flex;
             flex-direction: column;
             padding: 32px 0px 16px;
-            background: url(bg2.png) center / cover;
+            background: url(./img/bg2.png) center / cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,7 +46,7 @@
 
 
         .title {
-            color:black;
+            color: black;
             font-family: Montserrat, sans-serif;
             font-size: 22px;
             text-align: justify;
@@ -55,9 +57,24 @@
             padding: 10px
         }
 
+        .video-container {
+            display: flex;
+            width: 560px;
+            justify-content: center;
+        }
+
+        .video {
+            width: 560px;
+            height: 315px;
+            border: none;
+        }
+
         @media (min-width: 600px) {
             .title {
                 font-size: 32px
+            }
+            .video-container {
+                width: 100% !important
             }
         }
 
@@ -89,7 +106,7 @@
             cursor: pointer;
             background-color: #191C1F;
             border-radius: 24px;
-            border: solid #FFFFFF 2px;
+            border: solid rgb(191, 182, 0) 2px;
             text-decoration: none;
             color: white;
             font-size: 12px;
@@ -150,7 +167,7 @@
 
 <body>
 
-    <!-- <section>
+    <!-- <section class="section-top">
         <div class="offer-container">
             <div class="description">
                 🎁 <strong>OFERTA</strong>: COMBO <strong>( MENTORIA AO VIVO +</strong> <strong>IMERSAO) </strong>
@@ -160,7 +177,8 @@
     </section> -->
     <section class="section1">
         <div class="title">
-            🚀 Mentoria: Aprenda programação do zero e construa seus primeiros sites
+            🚀 Mentoria: Aprenda programação do zero e construa seus
+            primeiros sites
             ainda essa semana (mesmo começando do
             absoluto zero)
         </div>
@@ -196,7 +214,8 @@
             💡 A solução mais simples pra começar
         </div>
         <div class="description">
-            A <strong>Mentoria + Curso Imersão Programação</strong> foi criado pra
+            A <strong>Mentoria + Curso Imersão Programação</strong> foi
+            criado pra
             pegar você do zero
             absoluto e te levar até a criação dos seus
             primeiros projetos reais.
@@ -210,11 +229,11 @@
         <div class="title">
             🎬 Assista antes de continuar
         </div>
-        <div class="description">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HI4SAh8MaSk?rel=0"
-                title="YouTube video player" frameborder="0"
+        <div class="video-container">
+            <iframe class="video" src="https://www.youtube.com/embed/HI4SAh8MaSk?rel=0" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                allowfullscreen>
             </iframe>
         </div>
     </section>
@@ -245,9 +264,9 @@
             <p>“Explicação simples, finalmente fez sentido pra mim”</p>
 
         </div>
-        <img class="imagem" src="alunos.png" alt="Fotos estilo galeria dos alunos do curso presencial">
+        <img class="imagem" src="./img/alunos.png" alt="Fotos estilo galeria dos alunos do curso presencial">
 
-        <img class="imagem-depoimento" src="depo.webp" alt="Depoimentos de alunos">
+        <img class="imagem-depoimento" src="./img/depo.webp" alt="Depoimentos de alunos">
 
     </section>
 
@@ -332,7 +351,8 @@
             🚀 Comece agora
         </div>
         <div class="description">
-            <a href="https://pay.hotmart.com/N105131434Q" class="botao"> 🛒 GARANTIR MINHA VAGA AGORA</a>
+            <a href="https://pay.hotmart.com/N105131434Q" class="botao"> 🛒
+                GARANTIR MINHA VAGA AGORA</a>
         </div>
     </section>
 
@@ -373,7 +393,8 @@
             🔽 Última chance
         </div>
         <div class="description">
-            <a class="botao" href="https://pay.hotmart.com/N105131434Q">🛒 GARANTIR MINHA
+            <a class="botao" href="https://pay.hotmart.com/N105131434Q">🛒
+                GARANTIR MINHA
                 VAGA AGORA</a>
         </div>
     </section>
