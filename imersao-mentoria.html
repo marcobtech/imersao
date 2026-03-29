@@ -58,14 +58,15 @@
         }
 
         .video-container {
-            display: flex;
-            width: 560px;
-            justify-content: center;
+            width: 100%;
+            /* mobile */
+            aspect-ratio: 16 / 9;
+            /* mantém proporção */
         }
 
         .video {
-            width: 560px;
-            height: 315px;
+            width: 100%;
+            height: 100%;
             border: none;
         }
 
@@ -73,8 +74,12 @@
             .title {
                 font-size: 32px
             }
+
             .video-container {
-                width: 100% !important
+                max-width: 800px;
+                /* largura fixa no desktop */
+                margin: 0 auto;
+                /* centraliza */
             }
         }
 
