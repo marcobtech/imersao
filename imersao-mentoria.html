@@ -154,7 +154,7 @@
             width: 100%;
 
             .description {
-                font-size: 10px;
+                font-size: 16px;
             }
 
             .button {
@@ -167,20 +167,31 @@
                 text-decoration: none;
             }
         }
+        .hidden-menu-top {
+            display: none
+        }
+        .show-menu-top {
+            display: block
+        }
+        .margion-section-top {
+            margin-top: 36px;
+        }
     </style>
+    
 </head>
 
 <body>
 
-    <!-- <section class="section-top">
+    <section class="section-top" id="menuTop">
         <div class="offer-container">
             <div class="description">
-                🎁 <strong>OFERTA</strong>: COMBO <strong>( MENTORIA AO VIVO +</strong> <strong>IMERSAO) </strong>
-                <a href="" class="button">APROVEITE!</a>
+                <strong>Curso:</strong> Imersão Front-End
+                <a href="https://marcobtech.github.io/imersao/imersao.html" class="button">SAIBA MAIS</a>
             </div>
         </div>
-    </section> -->
-    <section class="section1">
+    </section>
+
+    <section class="section1" id="sectionTop">
         <div class="title">
             🚀 Mentoria: Aprenda programação do zero e construa seus
             primeiros sites
@@ -195,6 +206,20 @@
             com programação
         </div>
     </section>
+
+    <script>
+        let menuTop = true;
+        let menu = document.getElementById("menuTop");
+        let sectionTop = document.getElementById("sectionTop");
+        if (menuTop) {
+            menu.classList.add('show-menu-top');
+            sectionTop.classList.toggle('margion-section-top')
+
+        } else {
+            menu.classList.add('hidden-menu-top')
+        }
+    </script>
+    
 
     <section class="section2">
         <div class="title">
@@ -317,9 +342,9 @@
                 hoje e você pode começar mesmo do zero e sem faculdade!</p>
             <div class="price-container">
                 <div>por apenas</div>
-                <div class="preco">R$ 197,00</div>
-                <div class="parcelamento">ou <strong>12</strong> x de
-                    <strong>R$ 20,37</strong>
+                <div class="preco">R$ 389,00</div>
+                <div class="parcelamento">ou <strong>6</strong> x de
+                    <strong>R$ 73,16</strong>
                 </div>
                 <div>PAGAMENTO 100% SEGURO COM ACESSO IMEDIATO</div>
                 <div class="oferta">* Oferta promocional válida por tempo
