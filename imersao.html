@@ -136,6 +136,35 @@
         .offer-container {
             font-family: Raleway, sans-serif;
             background-color: rgb(255, 0, 170);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            border-bottom: black 1px solid;
+            width: 100%;
+
+            .description {
+                font-size: 12px;
+                font-family: sans-serif;
+            }
+
+            .button {
+                background-color: black;
+                color: white;
+                border-radius: 24px;
+                padding: 6px 20px 6px 20px;
+                font-size: 12px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+
+        /* .offer-container {
+            font-family: Raleway, sans-serif;
+            background-color: rgb(255, 0, 170);
             width: 100%;
             display: flex;
             justify-content: center;
@@ -162,7 +191,7 @@
                 font-weight: bold;
                 text-decoration: none;
             }
-        }
+        } */
 
         .hidden-menu-top {
             display: none
