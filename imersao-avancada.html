@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web Avançado</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Raleway, sans-serif;
+            background: #0f0f0f;
+            color: white;
+            padding-top: 45px;
+        }
+
+        .container {
+            padding: 25px 15px;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .headline {
+            font-family: Montserrat;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .subheadline {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .video {
+            width: 100%;
+            aspect-ratio: 16/9;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .cta {
+            display: block;
+            margin: 25px auto;
+            padding: 18px;
+            background: #e50914;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 35px;
+            text-decoration: none;
+            width: 100%;
+            max-width: 350px;
+            transition: 0.3s;
+        }
+
+        .cta:hover {
+            transform: scale(1.05);
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        .prova {
+            background: #1c1c1c;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .preco {
+            font-family: Montserrat;
+            font-size: 36px;
+            font-weight: bold;
+            color: #00ff88;
+            margin-top: 10px;
+        }
+
+        .urgencia {
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #e50914;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .top-bar a {
+            background: black;
+            color: white;
+            padding: 5px 12px;
+            margin-left: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        🚀 Novo: Curso Avançado + Projeto Netflix com API
+    </div>
+
+    <a href="https://wa.me/5591985301811?text=Quero%20saber%20mais%20sobre%20o%20curso%20avancado" class="whatsapp">💬</a>
+
+    <div class="container">
+
+        <!-- HEADLINE -->
+        <div class="headline">
+            🚀 Saia do Básico e Comece a Criar Aplicações Reais com JavaScript, APIs e Interfaces Profissionais
+        </div>
+
+        <div class="subheadline">
+            Evolua do iniciante para o nível profissional criando projetos reais como Netflix.
+        </div>
+
+        <!-- VIDEO -->
+        <iframe class="video" src="https://www.youtube.com/embed/HI4SAh8MaSk" frameborder="0" allowfullscreen></iframe>
+
+        <a href="#comprar" class="cta">QUERO EVOLUIR AGORA</a>
+
+        <!-- DORES -->
+        <div class="section">
+            <strong>Se você já começou e sente que:</strong>
+            <ul>
+                <li>Sabe o básico mas não consegue criar projetos sozinho</li>
+                <li>Não entende como funciona JavaScript na prática</li>
+                <li>Fica perdido com APIs e projetos reais</li>
+            </ul>
+        </div>
+
+        <!-- SOLUÇÃO -->
+        <div class="section">
+            <strong>Esse curso é o próximo passo.</strong>
+            <p>Você vai aprender a transformar conhecimento básico em aplicações reais.</p>
+        </div>
+
+        <a href="#comprar" class="cta">QUERO SUBIR DE NÍVEL</a>
+
+        <!-- BENEFÍCIOS -->
+        <div class="section">
+            <strong>O que você vai aprender:</strong>
+            <ul>
+                <li>Criar interfaces estilo Netflix</li>
+                <li>Consumir APIs reais</li>
+                <li>Manipular dados com JavaScript</li>
+                <li>Criar sistemas interativos</li>
+                <li>Construir projetos para portfólio</li>
+            </ul>
+        </div>
+
+        <!-- PROVA -->
+        <div class="section">
+            <strong>Resultados dos alunos:</strong>
+
+            <div class="prova">"Agora consigo criar projetos sozinho"</div>
+            <div class="prova">"Entendi como funciona API de verdade"</div>
+            <div class="prova">"Meu nível subiu muito rápido"</div>
+        </div>
+
+        <!-- PREÇO -->
+        <div class="section">
+            <strong>Invista no seu próximo nível:</strong>
+
+            <div class="preco">R$ 289,00</div>
+            <p>ou até 12x no cartão</p>
+
+            <div class="urgencia">
+                ⚠️ Vagas limitadas para essa turma
+            </div>
+        </div>
+
+        <a id="comprar" href="https://go.hotmart.com/A105382180O" class="cta">
+            🛒 GARANTIR MINHA VAGA
+        </a>
+
+        <!-- GARANTIA -->
+        <div class="section">
+            <strong>Garantia de 7 dias</strong>
+            <p>Você pode testar sem risco.</p>
+        </div>
+
+        <a href="https://go.hotmart.com/A105382180O" class="cta">
+            COMEÇAR AGORA
+        </a>
+
+    </div>
+
+</body>
+
+</html>
